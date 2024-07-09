@@ -1,9 +1,9 @@
 Task 1: 
 Debugging Exercise 1: Array Manipulation
-•	Error:
+•Error:
  i < numbers.length
 
-•	Corrected Code : 
+•Corrected Code : 
 public class ArrayManipulation {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
@@ -12,14 +12,14 @@ public class ArrayManipulation {
         }
     }
 }
-•	Error Explanation:
+•Error Explanation:
 When the code is being run it shows “ArrayIndexOutOfBoundsException” . The error is shown because the array index starts from 0. In the given program the total length is 5 but according to the index it is 4. In the previous program the for loop iterates till numbers[5] which doesn’t exist. Using i < numbers.length will correct the issue and will not show any error
 
 Debugging Exercise 2:Object- Oriented Programming
-•	Error:
+•Error:
 cannot find symbol method stop()
 
-•	Corrected Code:
+•Corrected Code:
 class Car{
     private String make;
     private String model;
@@ -46,18 +46,18 @@ public class Main {
     }
 }
 
-•	Error Explanation:
+•Error Explanation:
 Here it is missing a method called stop(). This is why it is showing an error called cannot find symbol method stop(). Adding a stop() method to the previous code will make it run without any error.
 
 
 Debugging Exercise 3: Exception Handling
 
-•	Error:
+•Error:
 	int result = divide(10, 0);
  	System.out.println("Result:"+result);
 
 
-•	Corrected Code:
+•Corrected Code:
 public class ExceptionHandling {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5};
@@ -81,7 +81,7 @@ public class ExceptionHandling {
     }
 }
 
-•	Error Explanation:
+•Error Explanation:
 
 In the previous code we are attempting to divide by zero in the method divide() which causes an “ArithmeticException” error. To make the code run smoothly we are adding another try- catch block.
 try {
@@ -95,10 +95,10 @@ try {
 
 Debugging Exercise 4:
 
-•	Error:
+•Error:
 The previous code correctly calculates the Fibonacci number. But the code can be inefficient for larger n values. 
 
-•	Corrected Code:
+•Corrected Code:
 public class Fibonacci {
     public static int fibonacci(int n) {
         if (n <= 1) {
@@ -122,16 +122,16 @@ public class Fibonacci {
     }
 }
 
-•	Error Explanation:
+•Error Explanation:
 The recursive approach recalculates the same Fibonacci numbers multiple times, resulting in an exponential time complexity (O(2^n)). To improve performance, we use memorization to store and reuse results, or switch to an iterative approach that computes each value once, reducing the time complexity to O(n).
 
 Debugging Exercise 5: 
 
-•	Error:
+•Error:
 The previous code correctly finds the prime number, but the code can be inefficient for larger n values. 
 Because it checks divisibility up to i-1 for each number i.
 
-•	Corrected Code:
+•Corrected Code:
 import java.util.*;
 
 public class PrimeNumbers {
@@ -158,7 +158,7 @@ public class PrimeNumbers {
     }
 }
 
-•	Error Explanation:
+•Error Explanation:
 
 In the original code, the inner loop for (int j = 2; j < i; j++) checks every number j from 2 to i-1 to see if it divides i without a remainder. For larger values of i, this results in many unnecessary checks, especially as i gets larger.
 
